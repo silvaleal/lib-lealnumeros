@@ -42,3 +42,4 @@ Discord: silvaleal#7458
 Suporte: [https://discord.gg/394ChkbKrt](https://discord.gg/394ChkbKrt)
 
 # lealnumeros-lib
+# e
