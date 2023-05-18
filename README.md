@@ -3,41 +3,42 @@ Trabalhe com formatação de números de uma maneira rápido e fácil.
 ```python
 from lealNumeros import LealNumerosAPI
 
-# Colocar pontuação nos números
+# Put punctuation in numbers
 print(LealNumerosAPI.numerosPontuados(10000))
-# Saida: 10.000
+# Output: 10.000
 
-# Colocar simbolos      
-        # Formatos disponíveis: (8) Mil
-        #                           M (Milhão)
-        #                           B (Bilhão)
-        #                           T (Trilhão)
-        #                           Q (Quadrilhão)
-        #                           Qi (Quintilhão)
-        #                           Sx (Sextilhão)
-        #                           Sp (Septilhão)
+# Put symbols
+        # Available formats: (8)    (pt-Br: mil | en: Thousand (Multiple languages))
+        #                           M (Million)
+        #                           B (Billion)
+        #                           T (Trillion)
+        #                           Q (Quadrillion)
+        #                           Qi (Quintillion)
+        #                           Sx (Sextillion)
+        #                           Sp (Septillion)
 print(LealNumerosAPI.numerosSimbolos(10000))
-# Saida: 10Mil
+# Output: 10Mil
 
-# Escrever o nome do número (PT-BR)
-print(LealNumerosAPI.numerosNome(100))
-# Saida: Dez mil
+# Write the name of the number
+print(LealNumerosAPI.numerosNome(100, lang='pt-br')) # Multiple language (Exemplo: en (ENGLISH))
+# Output: Cem (pt-br)
 
-# Escrever diferenças entre números
-print(LealNumerosAPI.numerosDiferenca(5, 5))
-# Saida: 5
+# Write differences between numbers
+print(LealNumerosAPI.numerosDiferenca(5, 10))
+# Output: 5
 
-# Escrever diferenças entre dias
-print(f'{LealNumerosAPI.dataDiferenca(1, 2, 2023)} Dias')
+# Write differences between days
+print(f'{LealNumerosAPI.dataDiferenca(1, 2, 2023)} Days')
 
-# Calculadora
-conta = input('Qual a conta matemática? (ex.: 10 + 5)')
-resultado = LealNumerosAPI.numerosCalculadora(conta)
-print(resultado)
+# Calculator
+account = input('What is the mathematical account? (ex .: 10 + 5)')
+result = LealNumerosAPI.numerosCalculadora(account)
+print(result)
 ```
 
 ---
 
 Discord: silvaleal#7458
 Suporte: [https://discord.gg/394ChkbKrt](https://discord.gg/394ChkbKrt)
+
 # lealnumeros-lib
