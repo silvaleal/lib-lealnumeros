@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: lealnumeros
-Version: 0.0.5.1
+Version: 0.0.6.3
 Summary: Trabalhe com formatação de números de uma maneira rápido e fácil.
 Author: José Rodolfo
 Author-email: silvaleal.ctt@gmail.com
@@ -14,37 +14,43 @@ Trabalhe com formataÃ§Ã£o de nÃºmeros de uma maneira rÃ¡pido e fÃ¡cil.
 ```python
 from lealNumeros import LealNumerosAPI
 
-# Colocar pontuaÃ§Ã£o nos nÃºmeros
+# Put punctuation in numbers
 print(LealNumerosAPI.numerosPontuados(10000))
-# Saida: 10.000
+# Output: 10.000
 
-# Colocar simbolos      
-        # Formatos disponÃ­veis: (8) Mil
-        #                           M (MilhÃ£o)
-        #                           B (BilhÃ£o)
-        #                           T (TrilhÃ£o)
-        #                           Q (QuadrilhÃ£o)
-        #                           Qi (QuintilhÃ£o)
-        #                           Sx (SextilhÃ£o)
-        #                           Sp (SeptilhÃ£o)
+# Put symbols
+        # Available formats: (8)    (pt-Br: mil | en: Thousand (Multiple languages))
+        #                           M (Million)
+        #                           B (Billion)
+        #                           T (Trillion)
+        #                           Q (Quadrillion)
+        #                           Qi (Quintillion)
+        #                           Sx (Sextillion)
+        #                           Sp (Septillion)
 print(LealNumerosAPI.numerosSimbolos(10000))
-# Saida: 10Mil
+# Output: 10Mil
 
-# Escrever o nome do nÃºmero (PT-BR)
-print(LealNumerosAPI.numerosNome(100))
-# Saida: Dez mil
+# Write the name of the number
+print(LealNumerosAPI.numerosNome(100, lang='pt-br')) # Multiple language (Exemplo: en (ENGLISH))
+# Output: Cem (pt-br)
 
-# Escrever diferenÃ§as entre nÃºmeros
-print(LealNumerosAPI.numerosDiferenca(5, 5))
-# Saida: 5
+# Write differences between numbers
+print(LealNumerosAPI.numerosDiferenca(5, 10))
+# Output: 5
 
-# Escrever diferenÃ§as entre dias
-print(f'{LealNumerosAPI.dataDiferenca(1, 2, 2023)} Dias')
+# Write differences between days
+print(f'{LealNumerosAPI.dataDiferenca(1, 2, 2023)} Days')
 
-# Calculadora
-conta = input('Qual a conta matemÃ¡tica? (ex.: 10 + 5)')
-resultado = LealNumerosAPI.numerosCalculadora(conta)
-print(resultado)
+# Calculator
+account = input('What is the mathematical account? (ex .: 10 + 5)')
+result = LealNumerosAPI.numerosCalculadora(account)
+print(result)
+
+# CHANGELOGS -> https://discord.com/invite/394ChkbKrt
+# 0.0.6 - Added multiple languages
+# 0.0.5 - Added function to calculate (add, subtract, multiply and divide)
+# 0.0.5 - Added function to compare days (by date: day/month/year)
+# 0.0.4 - Added function to compare difference between numbers.
 ```
 
 ---

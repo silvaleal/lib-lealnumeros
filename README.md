@@ -34,6 +34,12 @@ print(f'{LealNumerosAPI.dataDiferenca(1, 2, 2023)} Days')
 account = input('What is the mathematical account? (ex .: 10 + 5)')
 result = LealNumerosAPI.numerosCalculadora(account)
 print(result)
+
+# CHANGELOGS -> https://discord.com/invite/394ChkbKrt
+# 0.0.6 - Added multiple languages
+# 0.0.5 - Added function to calculate (add, subtract, multiply and divide)
+# 0.0.5 - Added function to compare days (by date: day/month/year)
+# 0.0.4 - Added function to compare difference between numbers.
 ```
 
 ---
